@@ -75,8 +75,6 @@ fastq_dump command from Sratoolkit: v2.10.8
 
 bbduk.sh and clumpify.sh command from BBTools suite: v37.25
 
-megahit command from MEGAHIT: v1.2.9
-
 bwa command from BWA MEM: v0.7.17
 
 samtools command from Samtools: v1.15.1

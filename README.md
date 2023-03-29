@@ -114,6 +114,7 @@ bwa index cow.canu.fa
 bwa mem -5SP cow.canu.fa HIC1.fastq.gz HIC2.fastq.gz > COW_MAP.sam
 samtools view -F 0x904 -bS COW_MAP.sam > COW_MAP_UNSORTED.bam
 samtools sort -n COW_MAP_UNSORTED.bam -o COW_MAP_SORTED.bam
+```
 
 **Step3: Run NormCC normalization module**
 ```

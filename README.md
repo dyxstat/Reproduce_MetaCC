@@ -57,7 +57,7 @@ python ./MetaCC.py norm -v final.contigs.fa WW_MAP_SORTED.bam out_WW
 
 **Step4: Run MetaCC binning module**
 ```
-python ./MetaCC.py cluster --cover -v final.contigs.fa out_WW
+python ./MetaCC.py bin --cover -v final.contigs.fa out_WW
 ```
 
 **Step5: Evaluation draft genomes using CheckM**
@@ -121,7 +121,7 @@ python ./MetaCC.py norm -v cow.canu.fa COW_MAP_SORTED.bam out_COW
 
 **Step4: Run MetaCC binning module**
 ```
-python ./MetaCC.py cluster --cover -v cow.canu.fa out_COW
+python ./MetaCC.py bin --cover -v cow.canu.fa out_COW
 ```
 
 **Step5: Evaluation draft genomes using CheckM**

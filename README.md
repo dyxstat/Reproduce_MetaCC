@@ -1,4 +1,4 @@
-# Instruction of reproducing results in MetaCC paper
+# Instruction to reproducing results in MetaCC paper
 
 Some scripts to process the intermediate data and plot figures are available in the folder [Scripts](https://github.com/dyxstat/Reproduce_MetaCC/tree/main/Scripts).
 

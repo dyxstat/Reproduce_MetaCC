@@ -163,6 +163,7 @@ qc3C kmer --yes --mean-insert 300 --enzyme MluCI --enzyme Sau3AI --reads ../RAW_
 We use both PPR-Meta and Platon to detect plasmid contigs from all assembled contigs on the sheep gut long-read metaHi-C dataset.
 
 ```
+# Pre-filter plasmid contigs using PPR-meta
 ./PPR_Meta flye.v29.sheep_gut.hifi.250g.fasta ppr_result_sheep.csv -t 0.5
 # Select all potential plasmid contigs detected by PPR-meta out as a new file 'sheep_plasmid.fa', which is further filtered by platon
 platon --db /scratch2/yuxuandu/db sheep_plasmid.fa  -t 60 --output result_platon --mode sensitivity

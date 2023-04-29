@@ -1,6 +1,6 @@
 # Instruction of reproducing results in MetaCC paper
 
-Scripts to process the intermediate data and plot figures are available in the folder [Scripts](https://github.com/dyxstat/Reproduce_MetaCC/tree/main/Scripts).
+Some scripts to process the intermediate data and plot figures are available in the folder [Scripts](https://github.com/dyxstat/Reproduce_MetaCC/tree/main/Scripts).
 
 ## Process short-read metagenomic Hi-C datasets
 We take the wastewater (WW) short-read metaHi-C datasets for example. The other two datasets were processed following the same procedure.

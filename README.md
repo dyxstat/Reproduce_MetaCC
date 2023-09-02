@@ -138,8 +138,9 @@ minimap2 -ax map-ont ../INPUT/cow.canu.fa ../INPUT/raw_long_read.fastq.gz > aln.
 samtools view -@ 29 -bSh aln.sam > aln_unsorted.bam
 samtools sort -@ 29 aln_unsorted.bam -o aln_sorted.bam
 samtools index aln_sorted.bam
-jgi_summarize_bam_contig_depths --outputDepth depth_cow.txt --pairedContigs paired_cow.txt aln_sorted.bam
+jgi_summarize_bam_contig_depths --percentIdentity 90 --outputDepth depth_cow.txt --pairedContigs paired_cow.txt aln_sorted.bam
 ```
+
 
 ## MAG analyses on long-read metaHi-C datasets
 To identify which near-complete bins overlapped each other from MetaCC binning and other Hi-C-based binners, we employed Mash (v2.2)

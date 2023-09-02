@@ -129,17 +129,6 @@ python ./MetaCC.py bin --cover -v cow.canu.fa out_COW
 checkm lineage_wf -t 60 -x fa out_COW/BIN out_checkm_COW
 ```
 
-## Estimating the coverages of assembled contigs
-
-We employed BBMap from the BBTools suite (v37.25) and minimap2 (v2.24) to align short reads and long reads back to contigs, respectively. SAMtools was used to transform the alignment files into bam files, serving as the input for the script ‘[jgi summarize bam contig depths](https://github.com/dyxstat/Reproduce_MetaCC/tree/main/Scripts)’ provided by to calculate the contigs’ coverages.
-
-```
-minimap2 -ax map-ont ../INPUT/cow.canu.fa ../INPUT/raw_long_read.fastq.gz > aln.sam
-samtools view -@ 29 -bSh aln.sam > aln_unsorted.bam
-samtools sort -@ 29 aln_unsorted.bam -o aln_sorted.bam
-samtools index aln_sorted.bam
-jgi_summarize_bam_contig_depths --percentIdentity 90 --outputDepth depth_cow.txt --pairedContigs paired_cow.txt aln_sorted.bam
-```
 
 
 ## MAG analyses on long-read metaHi-C datasets
